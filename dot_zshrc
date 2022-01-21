@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.emacs.d/bin:$PATH
 export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
+export PATH=$HOME/.local/share/flutter/bin:$PATH
 
 
 #════════════════════
@@ -97,7 +98,7 @@ export VISUAL="emacs"
 #══════════════
 ### Flutter ###
 #══════════════
-export CHROME_EXECUTABLE="/usr/lib/brave/brave"
+export CHROME_EXECUTABLE="/opt/vivaldi/vivaldi-bin"
 
 
 #══════════════
