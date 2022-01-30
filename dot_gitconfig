@@ -8,3 +8,6 @@
 
 [core]
 	autocrlf = input
+[alias]
+	cam = commit -am
+    lo = log --oneline
