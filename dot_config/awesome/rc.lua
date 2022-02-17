@@ -123,7 +123,7 @@ local editorgui         = "code"
 local filemanager       = "thunar"
 local mailclient        = "evolution"
 local mediaplayer       = "spotify"
-local terminal          = "alacritty"
+local terminal          = "kitty"
 local virtualmachine    = "virtualbox"
 
 -- awesome variables
@@ -343,7 +343,7 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "F11", function () awful.util.spawn( "rofi -theme-str 'window {width: 100%;height: 100%;}' -show drun" ) end,
         {description = "rofi fullscreen" , group = "function keys" }),
     -- Run rofi
-    awful.key({ modkey }, "r", function () awful.util.spawn( "rofi -show drun" ) end,
+    awful.key({ altkey }, "space", function () awful.spawn.with_shell( "~/.config/rofi/launchers/misc/launcher.sh" ) end,
         {description = "rofi" , group = "function keys" }),
 
     -- super + ...
