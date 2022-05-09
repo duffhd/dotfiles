@@ -38,7 +38,6 @@ bind "set completion-ignore-case on"
 #    -------    #
 #    ALIASES    #
 #    -------    #
-# List
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -alFh'
@@ -49,13 +48,6 @@ alias l.="ls -A | egrep '^\.'"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-# pacman unlock
-alias unlock="sudo rm /var/lib/pacman/db.lck"
-alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
-
-# ArcoLinux logout unlock
-alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
 
 # Continue download
 alias wget="wget -c"
@@ -73,22 +65,6 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 # Add new fonts
 alias update-fc='sudo fc-cache -fv'
-
-# Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
-
-# Iso and version used to install ArcoLinux
-alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-
-# Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-
-# update betterlockscreen images
-alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
-
-# List all installed desktops - xsessions desktops
-alias xd="ls /usr/share/xsessions"
 
 #  ---------  #
 #  EXTRACTOR  #
@@ -121,7 +97,6 @@ ex ()
 #  ----------------  #
 #  New shell prompt  #
 #  ----------------  #
-
 # Fetch tools
 #neofetch
 #screenfetch
@@ -129,7 +104,7 @@ ex ()
 #paleofetch
 #fetch
 #ufetch-arco
-pfetch
+#pfetch
 #sysinfo
 #sysinfo-retro
 #cpufetch
