@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
@@ -36,17 +37,14 @@ set scrolloff=8
 set hidden
 
 " Colorscheme.
-set termguicolors
 syntax on
+set termguicolors
+
+let ayucolor = "mirage"
+colorscheme ayu
 
 " Change background color (only works without termguicolors).
 "hi Normal ctermbg=NONE
-
-" Set pmenu colors
-hi Pmenu guibg=grey
-hi PmenuSel guibg=black
-hi PmenuSbar guibg=purple
-hi PmenuThumb guibg=pink
 
 "┌────────────┐
 "│----Coc-----│
