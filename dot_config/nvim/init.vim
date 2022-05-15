@@ -28,6 +28,9 @@ set number
 " Set enconding.
 set encoding=utf-8
 
+" No delay
+set updatetime=300
+
 " File will scroll down 8 lines above the screen end.
 set scrolloff=8
 set hidden
@@ -70,7 +73,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-
 "┌─────────────────┐
 "│----Terminal-----│
 "└─────────────────┘
@@ -95,7 +97,7 @@ tnoremap <Esc> <C-\><C-n>
 " Enter insert mode when clicking on the terminal.
 if has('nvim')
     augroup terminal_setup | au!
-        autocmd TermOpen * nnoremap <buffer><LeftRelease> <LeftRelease>i
+        autocmd TermOpen * nnoremap <buffer><LeftRelease> <LeftRelease>
     augroup end
 endif
 
