@@ -1,8 +1,6 @@
 [user]
 	email = 7588320-bluesden@users.noreply.gitlab.com
 	name = Alex
-[pull]
-    rebase = true
 [fetch]
     prune = true
 
