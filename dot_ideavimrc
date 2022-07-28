@@ -1,1 +1,3 @@
 set scrolloff=8
+imap <C-k> <Esc>
+ 
