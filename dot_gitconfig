@@ -1,11 +1,12 @@
 [user]
-	email = 7588320-bluesden@users.noreply.gitlab.com
-	name = Alex
+    email = 7588320-bluesden@users.noreply.gitlab.com
+    name = Alex
 [fetch]
     prune = true
 
 [core]
-	autocrlf = input
+    autocrlf = input
 [alias]
-	cam = commit -am
+    cam = commit -am
     lo = log --oneline
+    fp = fetch --prune
