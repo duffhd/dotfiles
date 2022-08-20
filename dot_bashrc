@@ -95,22 +95,6 @@ ex ()
   fi
 }
 
-#  ----------------  #
-#  New shell prompt  #
-#  ----------------  #
-# Fetch tools
-#neofetch
-#screenfetch
-#alsi
-#paleofetch
-#fetch
-#ufetch-arco
-#pfetch
-#sysinfo
-#sysinfo-retro
-#cpufetch
-#colorscript random
-
 #  ----------- #
 #  BASH THEME  #
 #  ----------- #
