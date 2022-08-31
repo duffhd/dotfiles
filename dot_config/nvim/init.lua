@@ -1,9 +1,8 @@
 local o = vim.opt
 local g = vim.g
-local key = vim.keymap.set
 
 -- Mouse support
-o.mouse = a
+o.mouse = "a"
 
 -- Line numbers
 o.number = true
@@ -31,8 +30,8 @@ o.scrolloff = 8
 o.hidden = true
 
 -- Colorscheme.
-o.syntax = on
+o.syntax = "on"
 --o.termguicolors = true
 
 -- Keybindings.
-key('i', '<C-k>', '<Esc>')
+vim.api.nvim_set_keymap("i", "<C-k>", "<Esc>", {})
