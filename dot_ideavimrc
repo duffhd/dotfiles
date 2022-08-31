@@ -7,4 +7,5 @@ sethandler <C-D> a:ide
 sethandler <C-F> a:ide
 sethandler <C-O> a:vim
 sethandler <C-V> a:ide
+sethandler <C-X> a:ide
 
