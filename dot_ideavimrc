@@ -1,5 +1,14 @@
+set NERDTree
 set scrolloff=8
+
+nnoremap <C-n> :NERDTree<CR>
+
+# Remap ESC
 imap <C-k> <Esc>
+
+# Tab switching
+nnoremap gh gT
+nnoremap gl gt
 
 # IDE shortcuts
 sethandler <C-C> a:ide
@@ -8,4 +17,3 @@ sethandler <C-F> a:ide
 sethandler <C-O> a:vim
 sethandler <C-V> a:ide
 sethandler <C-X> a:ide
-
