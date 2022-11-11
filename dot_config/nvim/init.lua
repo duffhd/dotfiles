@@ -1,3 +1,5 @@
+require("plugins")
+
 local o = vim.opt
 local g = vim.g
 
@@ -6,6 +8,7 @@ o.mouse = "a"
 
 -- Line numbers
 o.number = true
+o.relativenumber = true
 
 -- Break lines without breaking words.
 o.wrap = true
@@ -23,7 +26,7 @@ o.smarttab = true
 o.encoding = "utf-8"
 
 -- No delay.
-o.updatetime = 300
+o.updatetime = 50
 
 -- Scroll padding.
 o.scrolloff = 8
@@ -31,7 +34,12 @@ o.hidden = true
 
 -- Colorscheme.
 o.syntax = "on"
---o.termguicolors = true
+o.termguicolors = true
+vim.cmd 'colorscheme darcula-solid'
 
 -- Keybindings.
 vim.api.nvim_set_keymap("i", "<C-k>", "<Esc>", {})
+
+-- tab navigation
+vim.api.nvim_set_keymap("n", "gh", "gT", {})
+vim.api.nvim_set_keymap("n", "gl", "gt", {})
