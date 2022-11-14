@@ -85,11 +85,18 @@ cmp.setup {
 
 -- LSP's
 
-require('lspconfig')['rust_analyzer'].setup {
+lspconfig.rust_analyzer.setup {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
     settings = {
-      ["rust-analyzer"] = {}
-  }
+        ["rust-analyzer"] = {}
+    }
 }
+
+lspconfig.ocamllsp.setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+
