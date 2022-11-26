@@ -3,6 +3,10 @@ set scrolloff=8
 
 nnoremap <C-n> :NERDTree<CR>
 
+# Lines
+set number
+set relativenumber
+
 # Remap ESC
 imap <C-k> <Esc>
 
