@@ -16,6 +16,9 @@ export PATH=$HOME_LOCAL/flutter/bin:$PATH
 export PATH=$HOME_LOCAL/go/bin:$PATH
 export PATH=$HOME_LOCAL/hashlink:$PATH
 
+export VITASDK=/usr/local/vitasdk
+export PATH=$VITASDK/bin:$PATH
+
 if [ -d "$HOME/bin" ] ;
   then PATH="$HOME/bin:$PATH"
 fi
