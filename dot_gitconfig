@@ -1,9 +1,8 @@
 [user]
-    email = 7588320-bluesden@users.noreply.gitlab.com
-    name = Alex
+    email = duffhd@protonmail.com
+    name = duffhd
 [fetch]
     prune = true
-
 [core]
     autocrlf = input
 [alias]
